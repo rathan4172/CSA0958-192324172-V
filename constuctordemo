@@ -1,0 +1,28 @@
+class ConstructorDemo {
+    public static void main(String[] args) {
+        Constructor cuboid1 = new Constructor();
+        double vol;
+        vol = cuboid1.volume();
+        System.out.println("Volume is: " + vol);
+        Constructor cuboid2 = new Constructor(8,11,9);
+        vol = cuboid2.volume();
+        System.out.println("Volume is: " + vol);
+    }
+}
+
+class Constructor {
+    double length,width,height;
+    Constructor() {
+        length=10;
+        width=10; 
+        height=10; 
+    }
+    Constructor(double l, double w, double h) {
+        length = l;
+        width = w;
+        height = h;
+    }
+    double volume() {
+        return length * width * height;
+    }
+}
